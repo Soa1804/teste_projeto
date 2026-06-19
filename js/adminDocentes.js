@@ -1,4 +1,4 @@
-import { createClient } from 'http://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
 import { supabase, supabaseUrl, supabaseKey } from './supabase.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
