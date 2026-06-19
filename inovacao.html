@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovação - Engenharia de Software</title>
+    <link rel="stylesheet" href="style/acessibilidade.css">
+    <link rel="stylesheet" href="style/projetos.css"> 
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="#conteudo" aria-label="Ir para o conteúdo"></a>
+        <a href="#conteudo" accesskey="1">Ir para o conteúdo <span class="shortcut" data-key="1"></span></a>
+        <a href="#menu" aria-label="Ir para o menu"></a>
+        <a href="#menu" accesskey="2">Ir para o menu <span class="shortcut" data-key="2"></span></a>
+        <a href="#rodape" aria-label="Ir para o rodapé"></a>
+        <a href="#rodape" accesskey="3">Ir para o rodapé <span class="shortcut" data-key="3"></span></a>
+    </div>
+
+    <header class="header">
+        <div class="logo-area">
+            <img src="assets/logo_EngenhariaSoftware.png" alt="Escudo Engenharia de Software" class="logo">
+            <div class="text-logo">
+                <h1>Engenharia de Software</h1>
+                <p>IFPE - Campus Belo Jardim</p>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <ul class="menu">
+                <li><a id="homeLink" href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="docentes.html">Docentes</a></li>
+                <li><a href="matrizcurricular.html">Matriz Curricular</a></li>
+                <li><a href="horarios.html">Horários</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                
+                <li class="dropdown">
+                    <a href="projetos.html" class="ativo">Projetos ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="projetos.html">Pesquisa</a></li>
+                        <li><a href="extensao.html">Extensão</a></li>
+                        <li><a href="inovacao.html">Inovação</a></li>
+                        <li><a href="monitoria.html">Monitoria</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <a id="entrarLink" href="login.html">Entrar</a>
+        </div>
+    </header>
+
+    <div class="admin-banner" id="adminBanner" style="display: none;">
+        <button id="btnEditarPagina" class="btn-admin-edit">Gerenciar Página</button>
+    </div>
+
+    <main id="conteudo">
+        
+        <nav class="sub-menu">
+            <ul id="view-submenu-lista">
+                <li>Carregando...</li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h2 class="titulo-centralizado">INOVAÇÃO</h2>
+
+            <section class="secao-projeto grid-duas-colunas">
+                <div class="coluna">
+                    <h4>Coordenação de Extensão</h4>
+                    <p><strong>Coordenador(a):</strong> <span id="view-coord-nome">Carregando...</span></p>
+                    <p><strong>E-mail:</strong> <span id="view-coord-email">Carregando...</span></p>
+                    <p><strong>Contato Telefônico:</strong> <span id="view-coord-telefone">Carregando...</span></p>
+                </div>
+                <div class="coluna">
+                    <h4>Setor de Integração Escola Comunidade (SIEC)</h4>
+                    <p><strong>Responsável:</strong> <span id="view-siec-nome">Carregando...</span></p>
+                    <p><strong>E-mail:</strong> <span id="view-siec-email">Carregando...</span></p>
+                    <p><strong>Contato Telefônico:</strong> <span id="view-siec-telefone">Carregando...</span></p>
+                </div>
+            </section>
+
+            <div id="view-secoes-container">
+                <p>Carregando...</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="rodape" class="footer">
+        <div class="footer-container">
+            <h3>Dúvidas Frequentes</h3>
+            <div class="footer-links">
+                <a href="faq.html#matricula">Como renovar a matrícula?</a>
+                <a href="faq.html#aproveitamento">Aproveitamento de disciplinas</a>
+                <a href="faq.html#transferencia">Transferência interna</a>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <div class="footer-item">
+                        <img src="assets/icones/icone_telefone.png" alt="Telefone">
+                        <span>(81) 3411-3200</span>
+                    </div>
+                    <div class="footer-item">
+                        <img src="assets/icones/icone_localizacao.png" alt="Endereço">
+                        <span>Av. Sebastião Rodrigues da Costa, s/n - São Pedro<br>Belo Jardim - PE, 55145-065</span>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/engsoftware_ifpe/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icones/icone_instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="adminFormSection" class="admin-form-section" style="display: none;">
+        <div class="container">
+            <h2>Gerenciar Conteúdo de Inovação</h2>
+            <form id="formAdminEdit">
+                
+                <fieldset>
+                    <legend>1. Coordenação e SIEC</legend>
+                    <h4 style="color:#252b73;">Coordenação de Extensão</h4>
+                    <label>Nome do Coordenador(a):</label>
+                    <input type="text" id="input-coord-nome" required>
+                    <label>E-mail:</label>
+                    <input type="email" id="input-coord-email" required>
+                    <label>Telefone:</label>
+                    <input type="text" id="input-coord-telefone" required>
+                    
+                    <hr style="margin: 20px 0;">
+                    <h4 style="color:#252b73;">SIEC</h4>
+                    <label>Nome do Responsável:</label>
+                    <input type="text" id="input-siec-nome" required>
+                    <label>E-mail:</label>
+                    <input type="email" id="input-siec-email" required>
+                    <label>Telefone:</label>
+                    <input type="text" id="input-siec-telefone" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Gerenciador de Seções</legend>
+                    <p style="margin-bottom: 15px; color: #555;">Adicione blocos dinâmicos à página. Eles serão exibidos em ordem e o menu lateral será atualizado automaticamente.</p>
+                    
+                    <label>Título da Seção (Ex: Pronatec):</label>
+                    <input type="text" id="input-secao-titulo">
+                    
+                    <label>Descrição (Texto longo, HTML permitido):</label>
+                    <textarea id="input-secao-desc" rows="4"></textarea>
+                    
+                    <label>Informações de Contato (Opcional, HTML permitido):</label>
+                    <textarea id="input-secao-contato" rows="2" placeholder="Ex: Interessados podem contatar pelo e-mail abc@..."></textarea>
+                    
+                    <label>Documento PDF (Opcional):</label>
+                    <input type="file" id="input-secao-pdf" accept="application/pdf">
+                    
+                    <button type="button" id="btnAddSecao" class="btn-admin-add" style="margin-top:10px; padding:8px 15px; background-color: #2980b9; color: white;">Adicionar Seção</button>
+                    
+                    <hr style="margin: 20px 0;">
+                    <h4 style="color:#252b73;">Seções Atuais</h4>
+                    <ul id="admin-lista-secoes" style="list-style: none; padding: 0; margin-top: 15px;"></ul>
+                </fieldset>
+
+                <div class="modal-admin-actions" style="margin-top: 30px;">
+                    <button type="button" id="btnCancelarEdicao" class="btn-admin-cancelar">Cancelar</button>
+                    <button type="submit" class="btn-admin-salvar">Salvar Todas as Alterações</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/acessibilidade.js"></script>
+    <script type="module" src="js/authController.js"></script>
+    <script type="module" src="js/adminInovacao.js"></script>
+    <script src="js/menuHamburguer.js"></script>
+</body>
+</html>

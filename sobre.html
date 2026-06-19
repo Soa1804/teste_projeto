@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Engenharia de Software</title>
+   
+    <link rel="stylesheet" href="style/acessibilidade.css">
+    <link rel="stylesheet" href="style/sobre.css">
+</head>
+
+<body>
+
+  
+    <div class="top-bar">
+        <a href="#conteudo" aria-label="Ir para o conteúdo"></a>
+        <a href="#conteudo" accesskey="1">
+            Ir para o conteúdo <span class="shortcut" data-key="1"></span></a>
+
+        <a href="#menu" aria-label="Ir para o menu"></a>
+        <a href="#menu" accesskey="2">
+            Ir para o menu <span class="shortcut" data-key="2"></span></a>
+
+        <a href="#rodape" aria-label="Ir para o rodapé"></a>
+        <a href="#rodape" accesskey="3">
+            Ir para o rodapé <span class="shortcut" data-key="3"></span></a>
+    </div>
+
+    <header class="header">
+
+        <div class="logo-area">
+            <img src="assets/logo_EngenhariaSoftware.png"
+                 alt="Escudo Engenharia de Software"
+                 class="logo">
+
+            <div class="text-logo">
+                <h1>Engenharia de Software</h1>
+                <p>IFPE - Campus Belo Jardim</p>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <ul class="menu">
+                <li><a id="homeLink" href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="docentes.html">Docentes</a></li>
+                <li><a href="matrizcurricular.html">Matriz Curricular</a></li>
+                <li><a href="horarios.html">Horários</a></li>
+                <li><a href="eventos.html" >Eventos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="ativo">Projetos ▼</a> <ul class="dropdown-content">
+                        <li><a href="projetos.html">Pesquisa</a></li>
+                        <li><a href="extensao.html">Extensão</a></li>
+                        <li><a href="inovacao.html">Inovação</a></li>
+                        <li><a href="monitoria.html">Monitoria</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <a id="entrarLink" href="login.html">Entrar</a>
+        </div>
+
+    </header>
+
+    <div class="admin-banner" id="adminBanner" style="display: none;">
+        <button id="btnEditarPagina" class="btn-admin-edit">Editar Página</button>
+    </div>
+
+    <main id="conteudo">
+        
+        <div class="titulo-pagina-container container">
+            <h2 class="titulo-centralizado">SOBRE</h2>
+        </div>
+
+        <section class="sobre-descricao container">
+            <h3 id="edit-titulo-oque">O que é Engenharia de Software?</h3>
+            <p id="edit-texto-oque">
+                Engenharia de Software é a disciplina que combina habilidades técnicas, criatividade e gerenciamento de projetos para projetar, desenvolver e manter sistemas de software complexos e confiáveis. É a força motriz por trás de aplicativos e sistemas que usamos todos os dias, desde aplicativos de smartphone até sistemas de controle de tráfego aéreo.
+            </p>
+        </section>
+
+        <section class="sobre-estrutura container">
+            <h3 id="edit-titulo-estrutura">Estrutura</h3>
+            <p id="edit-texto-estrutura">
+                Nossa infraestrutura inclui um moderno bloco de engenharia, equipado com laboratórios de última geração, criados para proporcionar um ambiente de aprendizado prático e estimulante. Temos o compromisso de oferecer aos nossos estudantes as melhores condições para o desenvolvimento de suas habilidades em Engenharia de Software.
+            </p>
+
+           <div class="galeria-infra">
+                
+                <div class="item-foto">
+                    <img src="assets/infraestrutura/Bloco_eng.jpeg" alt="Bloco de Engenharia de Software">
+                    <p>Bloco de Engenharia</p>
+                </div>
+
+                <div class="item-foto">
+                    <img src="assets/infraestrutura/Sala_de_aula01.jpeg" alt="Sala de Aula Padrão">
+                    <p>Sala de Aula</p>
+                </div>
+
+                <div class="item-foto">
+                    <img src="assets/infraestrutura/Fabrica_de_softw.jpeg" alt="Fábrica de Software">
+                    <p>Fábrica de Software</p>
+                </div>
+
+                <div class="item-foto">
+                    <img src="assets/infraestrutura/lab_mouratech01.jpeg" alt="Laboratório Moura Tech 01">
+                    <p>Lab. Moura Tech 01</p>
+                </div>
+
+                <div class="item-foto">
+                    <img src="assets/infraestrutura/lab_mouratech02.jpeg" alt="Laboratório Moura Tech 02">
+                    <p>Lab. Moura Tech 02</p>
+                </div>
+
+                <div class="item-foto">
+                    <img src="assets/infraestrutura/lab_inclusao.jpeg" alt="Laboratório de Inclusão Digital">
+                    <p>Lab. de Inclusão Digital</p>
+                </div>
+
+                <div class="item-foto">
+                    <img src="assets/infraestrutura/lab01.jpeg" alt="Laboratório de Informática 01">
+                    <p>Laboratório 03</p>
+                </div>
+
+                <div class="item-foto">
+                    <img src="assets/infraestrutura/lab02.jpeg" alt="Laboratório de Informática 02">
+                    <p>Laboratório 04</p>
+                </div>
+            </div>
+        <section class="sobre-perfil container" id="secao-perfil">
+            <h3 id="edit-titulo-perfil">Perfil Profissional</h3>
+            <p id="edit-texto-perfil">
+                No IFPE - Belo Jardim, buscamos formar profissionais de Engenharia de Software altamente qualificados. Nossos alunos adquirem competências técnicas sólidas, capacidade de trabalho em equipe, habilidades de comunicação e a mentalidade necessária para enfrentar os desafios do setor de tecnologia da informação. Nossa abordagem prática e orientada para o mercado de trabalho prepara nossos graduados para atuarem em diversas áreas, desde desenvolvimento de software até gerenciamento de projetos. Abaixo você pode acessar alguns documentos importantes.
+            </p>
+            <ul class="lista-documentos" id="lista-docs-perfil">
+                <p style="font-style: italic; color: #666;">Carregando documentos...</p>
+            </ul>
+        </section>
+
+        <section class="sobre-documentos container" id="secao-documentos">
+            <h3 id="edit-titulo-documentos">Documentos Básicos</h3>
+            <p id="edit-texto-documentos">
+            </p>
+            <ul class="lista-documentos" id="lista-docs-basicos">
+                <p style="font-style: italic; color: #666;">Carregando documentos...</p>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="rodape" class="footer">
+
+        <div class="footer-container">
+
+            <h3>Dúvidas Frequentes</h3>
+
+            <div class="footer-links">
+                <a href="faq.html#matricula">Como renovar a matrícula?</a>
+                <a href="faq.html#aproveitamento">Aproveitamento de disciplinas</a>
+                <a href="faq.html#transferencia">Transferência interna</a>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+
+                <div class="footer-info">
+
+                    <div class="footer-item">
+                        <img src="assets/icones/icone_telefone.png" alt="Telefone">
+                        <span>(81) 3411-3200</span>
+                    </div>
+
+                    <div class="footer-item">
+                        <img src="assets/icones/icone_localizacao.png" alt="Endereço">
+                        <span>
+                            Av. Sebastião Rodrigues da Costa, s/n - São Pedro<br>
+                            Belo Jardim - PE, 55145-065
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="footer-social">
+
+                    <a href="https://www.instagram.com/engsoftware_ifpe/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icones/icone_instagram.png" alt="Instagram">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <section id="adminFormSection" class="admin-form-section" style="display: none;">
+        <div class="container">
+            <h2>Editar Conteúdo da Página</h2>
+            <form id="formAdminEdit">
+                
+                <fieldset>
+                    <legend>Seção: O que é Engenharia de Software?</legend>
+                    <label>Título:</label>
+                    <input type="text" id="input-titulo-oque" required>
+                    <label>Texto:</label>
+                    <textarea id="input-texto-oque" rows="5" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seção: Estrutura</legend>
+                    <label>Título:</label>
+                    <input type="text" id="input-titulo-estrutura" required>
+                    <label>Texto:</label>
+                    <textarea id="input-texto-estrutura" rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seção: Perfil Profissional</legend>
+                    <label>Título:</label>
+                    <input type="text" id="input-titulo-perfil" required>
+                    <label>Texto:</label>
+                    <textarea id="input-texto-perfil" rows="6" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seção: Documentos Básicos</legend>
+                    <label>Título:</label>
+                    <input type="text" id="input-titulo-documentos" required>
+                    <label>Texto:</label>
+                    <textarea id="input-texto-documentos" rows="3"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Gerenciar Documentos (PDF)</legend>
+                    <p style="margin-bottom: 15px; color: #555;">Adicione documentos em PDF às seções da página. Lembre-se de clicar em "Salvar Alterações" no final para confirmar as mudanças.</p>
+                    
+                    <label>Seção de Destino:</label>
+                    <select id="input-doc-secao" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;">
+                        <option value="perfil">Perfil Profissional</option>
+                        <option value="basicos">Documentos Básicos</option>
+                    </select>
+
+                    <label>Título do Documento (Ex: Matriz Curricular):</label>
+                    <input type="text" id="input-doc-titulo">
+
+                    <label>Arquivo PDF:</label>
+                    <input type="file" id="input-doc-pdf" accept="application/pdf" style="margin-bottom: 15px;">
+
+                    <button type="button" id="btnAddDoc" style="background-color: #2980b9; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Upload e Adicionar Documento</button>
+
+                    <hr style="margin: 25px 0; border: 0; border-top: 1px solid #ddd;">
+                    
+                    <h4 style="color: #252b73; margin-bottom: 10px;">Documentos Atuais (Perfil Profissional)</h4>
+                    <ul id="admin-lista-perfil" style="list-style: none; padding: 0; margin-bottom: 20px;"></ul>
+
+                    <h4 style="color: #252b73; margin-bottom: 10px;">Documentos Atuais (Documentos Básicos)</h4>
+                    <ul id="admin-lista-basicos" style="list-style: none; padding: 0;"></ul>
+                </fieldset>
+
+                <div class="modal-admin-actions">
+                    <button type="button" id="btnCancelarEdicao" class="btn-admin-cancelar">Cancelar</button>
+                    <button type="submit" class="btn-admin-salvar">Salvar Alterações</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/acessibilidade.js"></script>
+    <script type="module" src="js/authController.js"></script>
+    <script type="module" src="js/adminSobre.js"></script>
+    <script src="js/menuHamburguer.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Engenharia de Software</title>
+    <link rel="stylesheet" href="style/acessibilidade.css">
+    <link rel="stylesheet" href="style/projetos.css"> </head>
+<body>
+
+    <div class="top-bar">
+        <a href="#conteudo" aria-label="Ir para o conteúdo"></a>
+        <a href="#conteudo" accesskey="1">
+            Ir para o conteúdo <span class="shortcut" data-key="1"></span></a>
+
+        <a href="#menu" aria-label="Ir para o menu"></a>
+        <a href="#menu" accesskey="2">
+            Ir para o menu <span class="shortcut" data-key="2"></span></a>
+
+        <a href="#rodape" aria-label="Ir para o rodapé"></a>
+        <a href="#rodape" accesskey="3">
+            Ir para o rodapé <span class="shortcut" data-key="3"></span></a>
+    </div>
+
+    <header class="header">
+        <div class="logo-area">
+            <img src="assets/logo_EngenhariaSoftware.png" alt="Escudo Engenharia de Software" class="logo">
+            <div class="text-logo">
+                <h1>Engenharia de Software</h1>
+                <p>IFPE - Campus Belo Jardim</p>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <ul class="menu">
+                <li><a id="homeLink" href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="docentes.html">Docentes</a></li>
+                <li><a href="matrizcurricular.html">Matriz Curricular</a></li>
+                <li><a href="horarios.html">Horários</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="ativo">Projetos ▼</a> <ul class="dropdown-content">
+                        <li><a href="projetos.html">Pesquisa</a></li>
+                        <li><a href="extensao.html">Extensão</a></li>
+                        <li><a href="inovacao.html">Inovação</a></li>
+                        <li><a href="monitoria.html">Monitoria</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <a id="entrarLink" href="login.html">Entrar</a>
+        </div>
+    </header>
+
+    <div class="admin-banner" id="adminBanner" style="display: none;">
+        <button id="btnEditarPagina" class="btn-admin-edit">Gerenciar Página</button>
+    </div>
+
+    <main id="conteudo">
+        
+        <nav class="sub-menu">
+            <ul>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#iniciacao">Iniciação Científica</a></li>
+                <li><a href="#editais">Editais</a></li>
+                <li><a href="#ifpesquisando">IFPESQUISANDO</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h2 class="titulo-centralizado">PESQUISAS</h2>
+
+            <section id="contato" class="secao-projeto grid-duas-colunas">
+                <div class="coluna">
+                    <h4>Coordenação de Pesquisa, Pós-Graduação e Inovação</h4>
+                    <p><strong>Coordenador(a):</strong> <span id="view-coord-nome">Carregando...</span></p>
+                    <p><strong>E-mail:</strong> <span id="view-coord-email">Carregando...</span></p>
+                    <p><strong>Contato Telefônico:</strong> <span id="view-coord-telefone">Carregando...</span></p>
+                </div>
+                <div class="coluna">
+                    <h4>Assessoria da Coordenação de Pesquisa, Pós-Graduação e Inovação</h4>
+                    <div id="view-assessoria-container">
+                        <p>Carregando...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="iniciacao" class="secao-projeto">
+                <h4>Iniciação Científica</h4>
+                <div id="view-iniciacao-intro">
+                    <p>Carregando...</p>
+                </div>
+
+                <h5 class="subtitulo">Educação Superior</h5>
+                <ul class="lista-programas" id="view-iniciacao-programas">
+                    <li>Carregando...</li>
+                </ul>
+
+                <h5 class="subtitulo">Documentos</h5>
+                <p>Para ter acesso aos documentos relacionados à Iniciação Científica, clique abaixo:</p>
+                <div id="view-iniciacao-docs" style="margin-top: 10px;">
+                    <p>Carregando...</p>
+                </div>
+            </section>
+
+            <section id="editais" class="secao-projeto">
+                <h4>Editais</h4>
+                <h5 class="subtitulo">Em andamento</h5>
+                <ul class="lista-links" id="view-editais-andamento">
+                    <li>Carregando...</li>
+                </ul>
+
+                <h5 class="subtitulo">Encerrados</h5>
+                <ul class="lista-links" id="view-editais-encerrados">
+                    <li>Carregando...</li>
+                </ul>
+            </section>
+
+            <section id="ifpesquisando" class="secao-projeto">
+                <h4>IFPESQUISANDO: Experiências em Pesquisa, Pós-Graduação e Inovação</h4>
+                <div id="view-ifpesquisando-intro"><p>Carregando...</p></div>
+                
+                <div class="grade-anos" id="view-boletins-grid">
+                </div>
+
+                <h4 style="margin-top: 40px;">Projetos de pesquisa concluídos</h4>
+                <div class="tabela-responsiva">
+                    <table class="tabela-padrao">
+                        <thead>
+                            <tr>
+                                <th>Projeto</th>
+                                <th>Coordenador(a)</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="view-projetos-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer id="rodape" class="footer">
+
+        <div class="footer-container">
+
+            <h3>Dúvidas Frequentes</h3>
+
+            <div class="footer-links">
+                <a href="faq.html#matricula">Como renovar a matrícula?</a>
+                <a href="faq.html#aproveitamento">Aproveitamento de disciplinas</a>
+                <a href="faq.html#transferencia">Transferência interna</a>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+
+                <div class="footer-info">
+
+                    <div class="footer-item">
+                        <img src="assets/icones/icone_telefone.png" alt="Telefone">
+                        <span>(81) 3411-3200</span>
+                    </div>
+
+                    <div class="footer-item">
+                        <img src="assets/icones/icone_localizacao.png" alt="Endereço">
+                        <span>
+                            Av. Sebastião Rodrigues da Costa, s/n - São Pedro<br>
+                            Belo Jardim - PE, 55145-065
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="footer-social">
+
+                    <a href="https://www.instagram.com/engsoftware_ifpe/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icones/icone_instagram.png" alt="Instagram">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <section id="adminFormSection" class="admin-form-section" style="display: none;">
+        <div class="container">
+            <h2>Gerenciar Conteúdo de Pesquisa</h2>
+            <form id="formAdminEdit">
+                
+                <fieldset>
+                    <legend>1. Informações de Contato</legend>
+                    <label>Nome do Coordenador(a):</label>
+                    <input type="text" id="input-coord-nome" required>
+                    <label>E-mail da Coordenação:</label>
+                    <input type="email" id="input-coord-email" required>
+                    <label>Telefone da Coordenação:</label>
+                    <input type="text" id="input-coord-telefone" required>
+                    
+                    <hr style="margin: 20px 0;">
+                    <h4>Assessoria</h4>
+                    <p style="font-size: 0.9em; color: #555; margin-bottom:10px;">Adicione assessores abaixo:</p>
+                    <input type="text" id="input-assessor-nome" placeholder="Nome do Responsável">
+                    <input type="email" id="input-assessor-email" placeholder="E-mail">
+                    <button type="button" id="btnAddAssessor" class="btn-admin-add" style="margin-top:10px; padding:8px 15px;">Adicionar Assessor</button>
+                    <ul id="admin-lista-assessoria" style="list-style: none; padding: 0; margin-top: 15px;"></ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Iniciação Científica</legend>
+                    <label>Texto Introdutório (Pode conter várias linhas):</label>
+                    <textarea id="input-iniciacao-intro" rows="4"></textarea>
+                    
+                    <hr style="margin: 20px 0;">
+                    <h4>Programas (Educação Superior)</h4>
+                    <input type="text" id="input-programa-nome" placeholder="Nome (Ex: PIBIC)">
+                    <textarea id="input-programa-desc" rows="2" placeholder="Descrição do programa"></textarea>
+                    <button type="button" id="btnAddPrograma" class="btn-admin-add" style="margin-top:10px; padding:8px 15px;">Adicionar Programa</button>
+                    <ul id="admin-lista-programas" style="list-style: none; padding: 0; margin-top: 15px;"></ul>
+                    
+                    <hr style="margin: 20px 0;">
+                    <h4>Documento Base (PDF)</h4>
+                    <label>Título do Documento:</label>
+                    <input type="text" id="input-doc-iniciacao-titulo">
+                    <label>Arquivo PDF:</label>
+                    <input type="file" id="input-doc-iniciacao-pdf" accept="application/pdf">
+                    <button type="button" id="btnAddDocIniciacao" class="btn-admin-add" style="margin-top:10px; padding:8px 15px;">Upload e Adicionar Doc</button>
+                    <ul id="admin-lista-docs-iniciacao" style="list-style: none; padding: 0; margin-top: 15px;"></ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Editais</legend>
+                    <label>Título do Edital:</label>
+                    <input type="text" id="input-edital-titulo">
+                    <label>Status:</label>
+                    <select id="input-edital-status" style="width: 100%; padding: 12px; margin-bottom: 15px;">
+                        <option value="andamento">Em Andamento</option>
+                        <option value="encerrado">Encerrado</option>
+                    </select>
+                    <label>Arquivo PDF:</label>
+                    <input type="file" id="input-edital-pdf" accept="application/pdf">
+                    <button type="button" id="btnAddEdital" class="btn-admin-add" style="margin-top:10px; padding:8px 15px; background-color: #2980b9; color: white;">Upload e Adicionar Edital</button>
+                    
+                    <hr style="margin: 20px 0;">
+                    <h4 style="color:#252b73;">Em Andamento</h4>
+                    <ul id="admin-lista-editais-andamento" style="list-style: none; padding: 0;"></ul>
+                    <h4 style="margin-top: 20px; color:#252b73;">Encerrados</h4>
+                    <ul id="admin-lista-editais-encerrados" style="list-style: none; padding: 0;"></ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. IFPESQUISANDO (Boletins)</legend>
+                    <label>Texto Introdutório:</label>
+                    <textarea id="input-ifpesquisando-intro" rows="3"></textarea>
+
+                    <hr style="margin: 20px 0;">
+                    <h4>Adicionar Boletim</h4>
+                    <label>Ano (Ex: Ano I - 2019):</label>
+                    <input type="text" id="input-boletim-ano">
+                    <label>Título da Edição (Ex: Número 1 - Set):</label>
+                    <input type="text" id="input-boletim-titulo">
+                    <label>Arquivo PDF:</label>
+                    <input type="file" id="input-boletim-pdf" accept="application/pdf">
+                    <button type="button" id="btnAddBoletim" class="btn-admin-add" style="margin-top:10px; padding:8px 15px; background-color: #2980b9; color: white;">Upload e Adicionar Boletim</button>
+                    
+                    <div id="admin-lista-boletins" style="margin-top: 20px;"></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5. Projetos de Pesquisa Concluídos</legend>
+                    <label>Nome do Projeto:</label>
+                    <input type="text" id="input-projeto-nome">
+                    <label>Coordenador(a):</label>
+                    <input type="text" id="input-projeto-coord">
+                    <label>Status:</label>
+                    <input type="text" id="input-projeto-status" value="Concluído">
+                    <button type="button" id="btnAddProjeto" class="btn-admin-add" style="margin-top:10px; padding:8px 15px;">Adicionar Projeto à Tabela</button>
+                    
+                    <table class="tabela-padrao" style="margin-top: 20px;">
+                        <thead><tr><th>Projeto</th><th>Coordenador</th><th>Status</th><th>Ações</th></tr></thead>
+                        <tbody id="admin-lista-projetos"></tbody>
+                    </table>
+                </fieldset>
+
+                <div class="modal-admin-actions" style="margin-top: 30px;">
+                    <button type="button" id="btnCancelarEdicao" class="btn-admin-cancelar">Cancelar</button>
+                    <button type="submit" class="btn-admin-salvar">Salvar Todas as Alterações</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/acessibilidade.js"></script>
+    <script type="module" src="js/authController.js"></script>
+    <script type="module" src="js/adminProjetos.js"></script>
+    <script src="js/menuHamburguer.js"></script>
+</body>
+</html>

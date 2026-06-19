@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensão - Engenharia de Software</title>
+    <link rel="stylesheet" href="style/acessibilidade.css">
+    <link rel="stylesheet" href="style/projetos.css"> 
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="#conteudo" aria-label="Ir para o conteúdo"></a>
+        <a href="#conteudo" accesskey="1">Ir para o conteúdo <span class="shortcut" data-key="1"></span></a>
+        <a href="#menu" aria-label="Ir para o menu"></a>
+        <a href="#menu" accesskey="2">Ir para o menu <span class="shortcut" data-key="2"></span></a>
+        <a href="#rodape" aria-label="Ir para o rodapé"></a>
+        <a href="#rodape" accesskey="3">Ir para o rodapé <span class="shortcut" data-key="3"></span></a>
+    </div>
+
+    <header class="header">
+        <div class="logo-area">
+            <img src="assets/logo_EngenhariaSoftware.png" alt="Escudo Engenharia de Software" class="logo">
+            <div class="text-logo">
+                <h1>Engenharia de Software</h1>
+                <p>IFPE - Campus Belo Jardim</p>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <ul class="menu">
+                <li><a id="homeLink" href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="docentes.html">Docentes</a></li>
+                <li><a href="matrizcurricular.html">Matriz Curricular</a></li>
+                <li><a href="horarios.html">Horários</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li class="dropdown">
+                    <a href="projetos.html" class="ativo">Projetos ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="projetos.html">Pesquisa</a></li>
+                        <li><a href="extensao.html">Extensão</a></li>
+                        <li><a href="inovacao.html">Inovação</a></li>
+                        <li><a href="monitoria.html">Monitoria</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <a id="entrarLink" href="login.html">Entrar</a>
+        </div>
+    </header>
+
+    <div class="admin-banner" id="adminBanner" style="display: none;">
+        <button id="btnEditarPagina" class="btn-admin-edit">Gerenciar Página</button>
+    </div>
+
+    <main id="conteudo">
+        
+        <nav class="sub-menu">
+            <ul>
+                <li><a href="#programas">Programas</a></li>
+                <li><a href="#estagio">Estágio</a></li>
+                <li><a href="#bolsas">Bolsas</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h2 class="titulo-centralizado">EXTENSÃO</h2>
+
+            <section class="secao-projeto grid-duas-colunas">
+                <div class="coluna">
+                    <h4>Coordenação de Extensão</h4>
+                    <p><strong>Coordenador(a):</strong> <span id="view-coord-nome">Carregando...</span></p>
+                    <p><strong>E-mail:</strong> <span id="view-coord-email">Carregando...</span></p>
+                    <p><strong>Contato Telefônico:</strong> <span id="view-coord-telefone">Carregando...</span></p>
+                </div>
+                <div class="coluna">
+                    <h4>Setor de Integração Escola Comunidade (SIEC)</h4>
+                    <p><strong>Responsável:</strong> <span id="view-siec-nome">Carregando...</span></p>
+                    <p><strong>E-mail:</strong> <span id="view-siec-email">Carregando...</span></p>
+                    <p><strong>Contato Telefônico:</strong> <span id="view-siec-telefone">Carregando...</span></p>
+                </div>
+            </section>
+
+            <section id="programas" class="secao-projeto">
+                <h4>Programas</h4>
+                
+                <div id="view-programas-container">
+                    <p>Carregando...</p>
+                </div>
+            </section>
+
+            <section id="estagio" class="secao-projeto">
+                <h4>Estágio</h4>
+                <div id="view-estagio-intro"><p>Carregando...</p></div>
+                
+                <h5 class="subtitulo">Atribuições do aluno Estagiário</h5>
+                <ul class="lista-programas" id="view-estagio-atribuicoes">
+                    <li>Carregando...</li>
+                </ul>
+            </section>
+
+            <section id="bolsas" class="secao-projeto">
+                <h4>Bolsas</h4>
+                <div id="view-bolsas-intro"><p>Carregando...</p></div>
+                
+                <h5 class="subtitulo">Editais e Projetos de Bolsa</h5>
+                <div id="view-bolsas-container">
+                    <p>Carregando...</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer id="rodape" class="footer">
+        <div class="footer-container">
+            <h3>Dúvidas Frequentes</h3>
+            <div class="footer-links">
+                <a href="faq.html#matricula">Como renovar a matrícula?</a>
+                <a href="faq.html#aproveitamento">Aproveitamento de disciplinas</a>
+                <a href="faq.html#transferencia">Transferência interna</a>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <div class="footer-item">
+                        <img src="assets/icones/icone_telefone.png" alt="Telefone">
+                        <span>(81) 3411-3200</span>
+                    </div>
+                    <div class="footer-item">
+                        <img src="assets/icones/icone_localizacao.png" alt="Endereço">
+                        <span>Av. Sebastião Rodrigues da Costa, s/n - São Pedro<br>Belo Jardim - PE, 55145-065</span>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/engsoftware_ifpe/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icones/icone_instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="adminFormSection" class="admin-form-section" style="display: none;">
+        <div class="container">
+            <h2>Gerenciar Conteúdo de Extensão</h2>
+            <form id="formAdminEdit">
+                
+                <fieldset>
+                    <legend>1. Coordenação e SIEC</legend>
+                    <h4 style="color:#252b73;">Coordenação de Extensão</h4>
+                    <label>Nome do Coordenador(a):</label>
+                    <input type="text" id="input-coord-nome" required>
+                    <label>E-mail:</label>
+                    <input type="email" id="input-coord-email" required>
+                    <label>Telefone:</label>
+                    <input type="text" id="input-coord-telefone" required>
+                    
+                    <hr style="margin: 20px 0;">
+                    <h4 style="color:#252b73;">SIEC</h4>
+                    <label>Nome do Responsável:</label>
+                    <input type="text" id="input-siec-nome" required>
+                    <label>E-mail:</label>
+                    <input type="email" id="input-siec-email" required>
+                    <label>Telefone:</label>
+                    <input type="text" id="input-siec-telefone" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Programas</legend>
+                    <h4 style="color:#252b73;">Adicionar Programa</h4>
+                    <label>Título do Programa (Ex: Programa Mulheres Mil):</label>
+                    <input type="text" id="input-programa-titulo">
+                    <label>Descrição do Programa:</label>
+                    <textarea id="input-programa-desc" rows="3"></textarea>
+                    <label>Arquivo PDF (Opcional):</label>
+                    <input type="file" id="input-programa-pdf" accept="application/pdf">
+                    <button type="button" id="btnAddPrograma" class="btn-admin-add" style="margin-top:10px; padding:8px 15px; background-color: #2980b9; color: white;">Adicionar Programa</button>
+                    
+                    <ul id="admin-lista-programas" style="list-style: none; padding: 0; margin-top: 20px;"></ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Estágio</legend>
+                    <label>Texto Introdutório (HTML permitido):</label>
+                    <textarea id="input-estagio-intro" rows="4"></textarea>
+                    
+                    <hr style="margin: 20px 0;">
+                    <h4 style="color:#252b73;">Atribuições do aluno Estagiário</h4>
+                    <input type="text" id="input-estagio-atribuicao" placeholder="Ex: Contatar com o SIEC para receber as informações...">
+                    <button type="button" id="btnAddAtribuicao" class="btn-admin-add" style="margin-top:10px; padding:8px 15px;">Adicionar Atribuição</button>
+                    
+                    <ul id="admin-lista-atribuicoes" style="list-style: none; padding: 0; margin-top: 20px;"></ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. Bolsas</legend>
+                    <label>Texto Introdutório (HTML permitido):</label>
+                    <textarea id="input-bolsas-intro" rows="3"></textarea>
+
+                    <hr style="margin: 20px 0;">
+                    <h4 style="color:#252b73;">Adicionar Edital / Bolsa</h4>
+                    <label>Título (Ex: PIBEX 2018):</label>
+                    <input type="text" id="input-bolsa-titulo">
+                    <label>Descrição (Opcional):</label>
+                    <textarea id="input-bolsa-desc" rows="2"></textarea>
+                    <label>Arquivo PDF (Opcional):</label>
+                    <input type="file" id="input-bolsa-pdf" accept="application/pdf">
+                    <button type="button" id="btnAddBolsa" class="btn-admin-add" style="margin-top:10px; padding:8px 15px; background-color: #2980b9; color: white;">Adicionar Edital de Bolsa</button>
+                    
+                    <ul id="admin-lista-bolsas" style="list-style: none; padding: 0; margin-top: 20px;"></ul>
+                </fieldset>
+
+                <div class="modal-admin-actions" style="margin-top: 30px;">
+                    <button type="button" id="btnCancelarEdicao" class="btn-admin-cancelar">Cancelar</button>
+                    <button type="submit" class="btn-admin-salvar">Salvar Todas as Alterações</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/acessibilidade.js"></script>
+    <script type="module" src="js/authController.js"></script>
+    <script type="module" src="js/adminExtensao.js"></script>
+    <script src="js/menuHamburguer.js"></script>
+</body>
+</html>
